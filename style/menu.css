@@ -18,6 +18,12 @@ div.menu > ul > li {
   margin: 40px;
 }
 
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .material-symbols-outlined:not(#logo) {
   font-size: 20px;
 }
