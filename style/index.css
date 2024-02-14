@@ -2,6 +2,13 @@
   --font1: "Roboto";
   --text-color-1: black;
   --text-color-2: yellow;
+  --text-color-3: red;
   --background-color-1: yellow;
   --background-color-2: white;
+  --background-color-3: rgba(0, 0, 0, 0.1);
+  font-family: var(--font1);
+}
+
+body {
+  display: flex;
 }

@@ -1,0 +1,28 @@
+nav {
+  border-right: 1px solid black;
+  height: 100vh;
+  width: 250px;
+  padding: 25px;
+}
+
+div.logo {
+  display: flex;
+  font-size: 1.5rem;
+}
+
+div.logo > .POS {
+  color: var(--text-color-1);
+}
+
+div.menu > ul > li {
+  margin: 40px;
+}
+
+.material-symbols-outlined:not(#logo) {
+  font-size: 20px;
+}
+
+#logo.material-symbols-outlined {
+  font-size: 40px;
+  background: var(--background-color-3);
+}
