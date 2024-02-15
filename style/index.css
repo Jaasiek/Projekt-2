@@ -1,9 +1,9 @@
 :root {
   --font1: "Roboto";
   --text-color-1: black;
-  --text-color-2: yellow;
-  --text-color-3: red;
-  --background-color-1: yellow;
+  --text-color-2: rgb(255, 217, 0);
+  --text-color-3: rgb(185, 0, 0);
+  --background-color-1: rgb(255, 217, 0);
   --background-color-2: white;
   --background-color-3: rgba(0, 0, 0, 0.1);
   font-family: var(--font1);
@@ -11,4 +11,8 @@
 
 body {
   display: flex;
+}
+
+input:focus {
+  outline: none;
 }

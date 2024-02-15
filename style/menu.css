@@ -1,34 +1,72 @@
 nav {
-  border-right: 1px solid black;
+  border-right: 0.1px solid #d9d9d9;
   height: 100vh;
-  width: 250px;
+  width: 300px;
   padding: 25px;
+  display: flex;
+  flex-direction: column;
 }
 
 div.logo {
   display: flex;
   font-size: 1.5rem;
+  margin: 40px 0;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  font-weight: 600;
+}
+
+div.logo > span {
+  border-radius: 50%;
+  padding: 5px;
+  color: var(--text-color-3);
+  margin-right: 15px;
 }
 
 div.logo > .POS {
-  color: var(--text-color-1);
+  color: var(--text-color-3);
 }
 
-div.menu > ul > li {
-  margin: 40px;
+ul:not(small) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  justify-content: flex-start;
+}
+
+div.menu small {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 500;
 }
 
 li {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 3rem;
+  width: 95%;
+  padding: 10px;
+  border-radius: 15px;
 }
 
+li:hover {
+  transition: 0.5s;
+  background-color: var(--background-color-1);
+  cursor: pointer;
+}
 .material-symbols-outlined:not(#logo) {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 #logo.material-symbols-outlined {
-  font-size: 40px;
+  font-size: 35px;
   background: var(--background-color-3);
 }
