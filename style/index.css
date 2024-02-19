@@ -22,3 +22,9 @@ input:focus {
 small {
   color: var(--text-color-4);
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}

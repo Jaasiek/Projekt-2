@@ -1,0 +1,21 @@
+div.searchbar {
+  display: flex;
+  width: 85vw;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+small.actualpage {
+  font-weight: 700;
+  color: var(--text-color-1);
+}
+
+div.input {
+  display: flex;
+  background-color: var(--background-color-3);
+  padding: 10px;
+  border-radius: 15px;
+  gap: 10px;
+}

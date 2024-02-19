@@ -6,6 +6,7 @@ div.icon > span {
   background-color: var(--background-color-1);
   border-radius: 50%;
   padding: 0.7rem;
+  color: var(--text-color-base);
 }
 
 @keyframes rotate360 {
@@ -14,25 +15,28 @@ div.icon > span {
   }
   100% {
     transform: rotate(360deg);
+    color: var(--text-color-1);
   }
 }
 
 div.icon > span:hover {
-  color: var(--text-color-base);
+  color: var(--text-color-1);
   transition: 0.5s;
   display: inline-block;
-  animation: rotate360 2s linear infinite;
+  animation: rotate360 1s linear 1;
 }
 
 nav {
   border-right: 0.1px solid #d9d9d9;
   height: 100vh;
-  width: 300px;
+  width: 250px;
   padding: 25px;
   display: flex;
   flex-direction: column;
   flex-grow: 0;
   flex-shrink: 0;
+  position: sticky;
+  top: 0;
 }
 
 div.logo {
@@ -108,7 +112,7 @@ ul > li > button.notification > a > p {
   justify-content: center;
   width: 25px;
   border-radius: 50%;
-  margin-left: 75px;
+  margin-left: 3vw;
 }
 
 @media screen and (max-width: 782px) {
