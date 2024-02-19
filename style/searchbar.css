@@ -1,15 +1,37 @@
 div.searchbar {
   display: flex;
   width: 85vw;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-content: center;
+  flex-shrink: 2;
+  flex-grow: 0;
+}
+
+div.searchbar div:not(.input) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  margin: 1rem;
+}
+
+div.searchbar > div:not(.input) span {
+  background-color: var(--background-color-3);
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 20px;
 }
 
 small.actualpage {
   font-weight: 700;
   color: var(--text-color-1);
+}
+
+small.actualpage::before {
+  content: ">";
+  margin-right: 10px;
 }
 
 div.input {

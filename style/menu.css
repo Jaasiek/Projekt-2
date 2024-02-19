@@ -50,7 +50,7 @@ div.logo {
 }
 
 div.logo > span {
-  border-radius: 50%;
+  border-radius: 15px;
   padding: 5px;
   color: var(--text-color-3);
   margin-right: 15px;
