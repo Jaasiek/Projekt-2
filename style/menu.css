@@ -99,8 +99,16 @@ li:hover {
   background: var(--background-color-3);
 }
 
-ul:nth-child(7)::after {
-  content: "3";
+ul > li > button.notification > a > p {
+  background-color: var(--background-color-1);
+  width: 100%;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  border-radius: 50%;
+  margin-left: 75px;
 }
 
 @media screen and (max-width: 782px) {
