@@ -1,3 +1,29 @@
+div.icon {
+  display: none;
+}
+
+div.icon > span {
+  background-color: var(--background-color-1);
+  border-radius: 50%;
+  padding: 0.7rem;
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+div.icon > span:hover {
+  color: var(--text-color-base);
+  transition: 0.5s;
+  display: inline-block;
+  animation: rotate360 2s linear infinite;
+}
+
 nav {
   border-right: 0.1px solid #d9d9d9;
   height: 100vh;
@@ -5,12 +31,14 @@ nav {
   padding: 25px;
   display: flex;
   flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 div.logo {
   display: flex;
   font-size: 1.5rem;
-  margin: 40px 0;
+  margin: 1.75rem 0;
   align-items: center;
   justify-content: center;
   align-content: center;
@@ -69,4 +97,18 @@ li:hover {
 #logo.material-symbols-outlined {
   font-size: 35px;
   background: var(--background-color-3);
+}
+
+ul:nth-child(7)::after {
+  content: "3";
+}
+
+@media screen and (max-width: 782px) {
+  nav {
+    display: none;
+  }
+  div.icon {
+    display: flex;
+    align-items: flex-start;
+  }
 }
