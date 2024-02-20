@@ -27,6 +27,10 @@ div.searchbar > div:not(.input) span {
   font-size: 20px;
 }
 
+div.searchbar > div:not(.input) span:hover {
+  cursor: pointer;
+}
+
 small.actualpage {
   font-weight: 700;
   color: var(--text-color-1);
