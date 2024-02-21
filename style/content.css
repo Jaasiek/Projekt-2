@@ -6,6 +6,7 @@ img {
 
 div.content {
   padding-left: 30px;
+  padding-right: 30px;
 }
 
 .strow,
@@ -13,6 +14,11 @@ div.content {
   display: flex;
   gap: 2rem;
   flex: 1;
+  justify-content: space-around;
+}
+
+.strow {
+  margin-bottom: 2rem;
 }
 
 .strow > div,
@@ -26,8 +32,8 @@ div.content {
   padding: 30px;
   gap: 10px;
   flex-wrap: wrap;
-  min-width: 350px;
-  min-height: 400px;
+  min-width: 400px;
+  min-height: 450px;
 }
 
 div.products {

@@ -1,6 +1,5 @@
 div.searchbar {
   display: flex;
-  width: 85vw;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -11,6 +10,7 @@ div.searchbar {
   position: sticky;
   top: 0;
   background-color: var(--background-color-2);
+  box-sizing: border-box;
 }
 
 div.searchbar div:not(.input) {
