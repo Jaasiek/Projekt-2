@@ -1,29 +1,24 @@
 div.icon {
   display: none;
+  height: 100%;
+  position: sticky;
+  top: 5px;
+  left: 5px;
+  z-index: 5;
 }
 
 div.icon > span {
-  background-color: var(--background-color-1);
-  border-radius: 50%;
-  padding: 0.7rem;
-  color: var(--text-color-base);
-}
-
-@keyframes rotate360 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-    color: var(--text-color-1);
-  }
+  height: 100%;
+  color: var(--text-color-1);
+  position: absolute;
+  top: 0;
+  transition: 0.2s;
+  font-size: 30px;
 }
 
 div.icon > span:hover {
-  color: var(--text-color-1);
-  transition: 0.5s;
-  display: inline-block;
-  animation: rotate360 1s linear 1;
+  color: var(--text-color-2);
+  transition: 0.2s;
 }
 
 nav {
@@ -94,7 +89,7 @@ li:hover {
   background-color: var(--background-color-1);
   cursor: pointer;
 }
-.material-symbols-outlined:not(#logo) {
+.material-symbols-outlined:not(#logo, #icon) {
   font-size: 25px;
 }
 
@@ -112,14 +107,4 @@ ul > li > button.notification > a > p {
   width: 25px;
   border-radius: 50%;
   padding: 5px;
-}
-
-@media screen and (max-width: 782px) {
-  nav {
-    display: none;
-  }
-  div.icon {
-    display: flex;
-    align-items: flex-start;
-  }
 }

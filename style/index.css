@@ -29,3 +29,59 @@ main {
   flex-direction: column;
   flex: 1;
 }
+
+@media screen and (max-width: 520px) {
+  div.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div.searchbar > div.actual_page small {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 782px) {
+  img {
+    width: 150px;
+    height: 150px;
+  }
+
+  div.products > div {
+    min-height: 350px;
+    min-width: 300px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  nav {
+    display: none;
+  }
+  div.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 1340px) {
+  div.person {
+    display: none;
+  }
+
+  div.person > small.copyright {
+    display: flex;
+  }
+
+  div.menu button.notification p {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1525px) {
+  div.person small:not(.copyright) {
+    display: none;
+  }
+}

@@ -20,6 +20,10 @@ div.person > div {
   margin-bottom: 1.75rem;
   gap: 1rem;
 }
+div.person div.name {
+  display: flex;
+  gap: 3.5px;
+}
 
 div.person img {
   width: auto;
@@ -28,6 +32,16 @@ div.person img {
 
 div.person div.tagline {
   margin-top: -10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+div.person h3 {
+  text-align: center;
 }
 
 div.person > div button {
@@ -40,6 +54,6 @@ div.person > div button {
 }
 
 div.person > div > div.tagline > small.Account_type::after {
-  content: "•" !important;
+  content: "•";
   margin-left: 5px;
 }

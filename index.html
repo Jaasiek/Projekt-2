@@ -67,7 +67,7 @@
   </head>
   <body>
     <div class="icon">
-      <span class="material-symbols-outlined">menu</span>
+      <span class="material-symbols-outlined" id="icon">menu</span>
     </div>
     <nav>
       <div class="logo">
@@ -138,7 +138,10 @@
       <div class="person">
         <div>
           <img src="/assets/theresa.jpg" alt="Profile_picture" />
-          <h3>Theresa Webb</h3>
+          <div class="name">
+            <h3 id="name">Theresa</h3>
+            <h3 id="surname">Webb</h3>
+          </div>
           <div class="tagline">
             <small class="Account_type">Waiter</small>
             <small>21h 37min</small>
@@ -147,12 +150,12 @@
             <a href="#">Open profile </a>
           </button>
         </div>
-        <small class="copyright">(C) 2020 SmartPOS app</small>
+        <small class="copyright">©️ 2020 SmartPOS app</small>
       </div>
     </nav>
     <main>
       <div class="searchbar">
-        <div>
+        <div class="actual_page">
           <button>
             <span class="material-symbols-outlined">arrow_back</span>
           </button>
@@ -173,45 +176,42 @@
           <h1>Burgers 🍔</h1>
         </div>
         <div class="products">
-          <div class="strow">
-            <div>
-              <img src="/assets/cheseburger.jpg" alt="cheeseburger" /><span
-                >Cheeseburger</span
-              ><small>150g</small>
-              <h2>$3.50</h2>
-            </div>
-            <div>
-              <img src="/assets/chickendeluxe.jpg" alt="ChickenDeluxe" /><span
-                >Chicken-Deluxe</span
-              ><small>240g</small>
-              <h2>$4.25</h2>
-            </div>
-            <div>
-              <img src="/assets/hamburger.jpg" alt="Hamburger" /><span
-                >Hamburger</span
-              ><small>320g</small>
-              <h2>$4.50</h2>
-            </div>
+          <div>
+            <img src="/assets/cheseburger.jpg" alt="cheeseburger" /><span
+              >Cheeseburger</span
+            ><small>150g</small>
+            <h2>$3.50</h2>
           </div>
-          <div class="ndrow">
-            <div>
-              <img src="/assets/bigjohn.jpg" alt="BigJohn" /><span
-                >Big John</span
-              ><small>650g</small>
-              <h2>Not yet</h2>
-            </div>
-            <div>
-              <img src="/assets/spicychicken.jpg" alt="SpicyChicken" /><span
-                >Spicy Chicken</span
-              ><small>340g</small>
-              <h2>Not yet</h2>
-            </div>
-            <div>
-              <img src="/assets/superstars.jpg" alt="SuperStars" /><span
-                >Superstars</span
-              ><small>250g</small>
-              <h2>Not yet</h2>
-            </div>
+          <div>
+            <img src="/assets/superstars.jpg" alt="ChickenDeluxe" /><span
+              >Chicken-Deluxe</span
+            ><small>240g</small>
+            <h2>$4.25</h2>
+          </div>
+          <div>
+            <img src="/assets/hamburger.jpg" alt="Hamburger" /><span
+              >Hamburger</span
+            ><small>320g</small>
+            <h2>$4.50</h2>
+          </div>
+
+          <div>
+            <img src="/assets/hamburger.jpg" alt="BigJohn" /><span
+              >Big John</span
+            ><small>650g</small>
+            <h2>Not yet</h2>
+          </div>
+          <div>
+            <img src="/assets/cheseburger.jpg" alt="SpicyChicken" /><span
+              >Spicy Chicken</span
+            ><small>340g</small>
+            <h2>Not yet</h2>
+          </div>
+          <div>
+            <img src="/assets/superstars.jpg" alt="SuperStars" /><span
+              >Superstars</span
+            ><small>250g</small>
+            <h2>Not yet</h2>
           </div>
         </div>
       </div>

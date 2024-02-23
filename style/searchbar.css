@@ -2,7 +2,7 @@ div.searchbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-content: center;
   flex-shrink: 2;
   flex-grow: 0;
@@ -47,4 +47,19 @@ div.input {
   padding: 10px;
   border-radius: 15px;
   gap: 10px;
+}
+
+@media screen and (max-width: 782px) {
+  div.searchbar > div.icon {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  div.searchbar {
+    gap: 10px;
+  }
+
+  small {
+    display: flex;
+  }
 }
